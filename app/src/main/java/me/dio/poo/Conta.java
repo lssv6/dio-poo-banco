@@ -6,6 +6,10 @@ public class Conta<P extends Pessoa>{
     private double saldo;
     private Pessoa pessoa;
 
+    public Conta(P pessoa){
+        this.pessoa = pessoa;
+    }
+
     public double getSaldo(){
         return saldo;
     }

@@ -4,11 +4,12 @@
 package me.dio.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        PessoaJuridica lucas_digitacoes = new PessoaJuridica("Lucas", "67230011-99");
+        ContaJuridica ld_c6 = new ContaJuridica(lucas_digitacoes);
+        ld_c6.depositar(200);
+        ld_c6.depositar(50);
+        ld_c6.depositar(6);
+        System.out.printf("Saldo é = %f\n", ld_c6.getSaldo());
     }
 }
