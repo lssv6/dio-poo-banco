@@ -9,6 +9,10 @@ public class Conta<P extends Pessoa>{
     public double getSaldo(){
         return saldo;
     }
+    
+    public Pessoa getPessoa(){
+        return pessoa;
+    }
 
     public void depositar(double quantia){
         saldo += quantia;
@@ -20,9 +24,4 @@ public class Conta<P extends Pessoa>{
         }
         saldo -= quantia;
     }
-    
-    public Pessoa getPessoa(){
-        return pessoa;
-    }
 }
-
